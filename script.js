@@ -20,9 +20,3 @@ const observer = new IntersectionObserver((entries) => entries.forEach((entry) =
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 
 document.getElementById('year').textContent = new Date().getFullYear();
-const form = document.querySelector('.enquiry-form');
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  form.querySelector('.form-status').textContent = 'Thank you! Bajaj Decorators has received your enquiry. Connect this form to your preferred email or WhatsApp service before publishing.';
-  form.reset();
-});
