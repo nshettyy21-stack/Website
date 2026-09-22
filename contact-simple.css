@@ -1,0 +1,2 @@
+.contact-message{background:var(--paper);color:var(--brown);padding:38px;align-self:center}.contact-message h3{font:600 2rem/1.15 var(--serif);margin:0 0 15px}.contact-message p:not(.eyebrow){color:var(--muted);font-size:.92rem;margin:0 0 24px}
+@media(max-width:850px){.contact-message{padding:30px}}
