@@ -20,3 +20,5 @@ const observer = new IntersectionObserver((entries) => entries.forEach((entry) =
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 
 document.getElementById('year').textContent = new Date().getFullYear();
+// Direct visitors to the hosted gallery page.
+document.querySelectorAll('a[href="#gallery"]').forEach((link) => { link.href = 'gallery.html'; });
