@@ -22,3 +22,16 @@ document.querySelectorAll('.reveal').forEach((element) => observer.observe(eleme
 document.getElementById('year').textContent = new Date().getFullYear();
 // Direct visitors to the hosted gallery page.
 document.querySelectorAll('a[href="#gallery"]').forEach((link) => { link.href = 'gallery.html'; });
+const galleryLink = navigation.querySelector('a[href="gallery.html"]');
+if (galleryLink && !navigation.querySelector('a[href="menu.html"]')) {
+  const menuLink = document.createElement('a');
+  menuLink.href = 'menu.html';
+  menuLink.textContent = 'Menu';
+  galleryLink.after(menuLink);
+}
+const headerBrand = document.querySelector('header .brand');
+if (headerBrand) {
+  headerBrand.innerHTML = '<img src="bajaj-decorators-logo.png" alt="Bajaj Decorators">';
+  const logo = headerBrand.querySelector('img');
+  logo.style.cssText = 'width:150px;height:auto;max-height:66px;display:block';
+}
