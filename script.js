@@ -38,7 +38,7 @@ if (navigation) {
 
 const headerBrand = document.querySelector('header .brand');
 if (headerBrand) {
-  headerBrand.innerHTML = '<img src="bajaj-decorators-logo.png" alt="Bajaj Decorators">';
+  headerBrand.innerHTML = '<img src="bajaj-caterers-decorators-logo.jpg" alt="Bajaj Caterers and Decorators">';
   const logo = headerBrand.querySelector('img');
   logo.style.cssText = 'width:64px;height:64px;object-fit:contain;display:block';
 }
